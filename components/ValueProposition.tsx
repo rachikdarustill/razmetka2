@@ -76,7 +76,7 @@ export default function ValueProposition() {
                       </div>
                     </div>
                     {index < 2 && (
-                      <div className="ml-6 mt-2 mb-2">
+                      <div className="flex justify-start mt-2 mb-2 ml-3">
                         <svg className="w-6 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                         </svg>

@@ -79,9 +79,18 @@ export default function HowItWorks() {
                 </p>
               </div>
               
-              {/* Arrow between cards on desktop */}
+              {/* Vertical arrow between cards on mobile */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 -right-6 lg:-right-8 transform -translate-y-1/2 z-10">
+                <div className="md:hidden flex justify-center items-center mt-6 mb-2 w-full">
+                  <svg className="w-6 h-6 text-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </div>
+              )}
+              
+              {/* Horizontal arrow between cards on desktop */}
+              {index < steps.length - 1 && (
+                <div className="hidden md:flex absolute top-1/2 -right-6 lg:-right-8 -translate-y-1/2 z-10 items-center justify-center">
                   <svg className="w-8 h-8 text-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
