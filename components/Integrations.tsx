@@ -6,8 +6,8 @@ export default function Integrations() {
   const { t } = useTranslation();
 
   return (
-    <section id="integrations" className="section-padding overflow-x-hidden">
-      <div className="container-custom w-full max-w-full">
+    <section id="integrations" className="section-padding">
+      <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="heading-lg text-white mb-4">
             {t('integrations.title')}
@@ -17,7 +17,7 @@ export default function Integrations() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start w-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left: Channels */}
           <div className="space-y-8 min-w-0">
             <div>
@@ -61,10 +61,10 @@ export default function Integrations() {
           </div>
 
           {/* Right: Data Model Example */}
-          <div className="w-full min-w-0">
+          <div className="min-w-0">
             <h3 className="text-xl md:text-2xl font-bold text-white mb-6">{t('integrations.dataModel.title')}</h3>
             
-            <div className="bg-gray-900 rounded-xl p-4 sm:p-6 text-xs sm:text-sm overflow-x-auto w-full">
+            <div className="bg-gray-900 rounded-xl p-4 sm:p-6 text-xs sm:text-sm overflow-x-auto">
               <div className="text-gray-400 mb-2">{t('integrations.dataModel.inputExample')}</div>
               <pre className="text-gray-100 font-mono whitespace-pre overflow-x-auto">
 {`{
