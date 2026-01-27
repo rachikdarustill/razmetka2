@@ -5,6 +5,8 @@ import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Hero() {
   const { t } = useTranslation();
+  const proof = t('hero.proof');
+  const hasProof = proof !== 'hero.proof' && proof.trim().length > 0;
 
   const handlePrimaryCTA = () => {
     trackEvent({ event: 'click_primary_cta', location: 'hero' });
@@ -35,6 +37,12 @@ export default function Hero() {
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
             {t('hero.description')}
           </p>
+
+          {hasProof && (
+            <p className="text-sm md:text-base text-gray-300 max-w-3xl mx-auto">
+              {proof}
+            </p>
+          )}
           
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

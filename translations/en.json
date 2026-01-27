@@ -3,6 +3,7 @@
     "badge": "For EdTech / L&D / HR-tech",
     "title": "We label learning content — for recommendations and analytics",
     "description": "Ready for personalization, search, and skill coverage analytics.",
+    "proof": "Production-proven: we shipped an AI labeling service for learning content (100k+ records) with ~85–90% accuracy — used to build personalized learning paths.",
     "primaryCTA": "Request demo",
     "secondaryCTA": "View sample labeling",
     "primaryCTAAria": "Request demo and API access",
