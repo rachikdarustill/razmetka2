@@ -14,8 +14,8 @@ export default function Hero() {
 
   const handleSecondaryCTA = () => {
     trackEvent({ event: 'click_secondary_cta', location: 'hero' });
-    // В продакшене здесь будет открытие модалки или скачивание примера
-    alert(t('common.sampleAlert'));
+    // Прокрутка к примеру модели данных
+    document.getElementById('integrations')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

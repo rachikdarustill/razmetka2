@@ -108,9 +108,9 @@ export default function Integrations() {
               </pre>
             </div>
             
-            <p className="text-sm text-gray-400 mt-4 italic break-words">
+            {/* <p className="text-sm text-gray-400 mt-4 italic break-words">
               {t('integrations.dataModel.note')}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

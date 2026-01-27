@@ -1,6 +1,7 @@
 'use client';
 
 import Hero from '@/components/Hero';
+import WhyWeDoIt from '@/components/WhyWeDoIt';
 import ValueProposition from '@/components/ValueProposition';
 import HowItWorks from '@/components/HowItWorks';
 import Outcomes from '@/components/Outcomes';
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <main className="min-h-screen relative pt-16 md:pt-20">
       <Hero />
+      <WhyWeDoIt />
       <ValueProposition />
       <HowItWorks />
       <Outcomes />
@@ -40,6 +42,7 @@ export default function Home() {
             <div>
               <h4 className="text-white font-semibold mb-4">{t('footer.navigation.title')}</h4>
               <ul className="space-y-2 text-sm">
+                <li><a href="#why-we-do-it" className="hover:text-white transition-colors">{t('footer.navigation.whyWeDoIt')}</a></li>
                 <li><a href="#how-it-works" className="hover:text-white transition-colors">{t('footer.navigation.howItWorks')}</a></li>
                 <li><a href="#outcomes" className="hover:text-white transition-colors">{t('footer.navigation.outcomes')}</a></li>
                 <li><a href="#integrations" className="hover:text-white transition-colors">{t('footer.navigation.integrations')}</a></li>

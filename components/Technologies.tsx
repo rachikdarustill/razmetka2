@@ -12,14 +12,14 @@ export default function Technologies() {
     { name: t('technologies.tech.3.name'), description: t('technologies.tech.3.description') },
     { name: t('technologies.tech.4.name'), description: t('technologies.tech.4.description') },
     { name: t('technologies.tech.5.name'), description: t('technologies.tech.5.description') },
-  ];
+  ].filter((tech) => tech.name.trim().length > 0);
 
   const aiModels = [
     { name: t('technologies.aiModels.0.name'), description: t('technologies.aiModels.0.description') },
     { name: t('technologies.aiModels.1.name'), description: t('technologies.aiModels.1.description') },
     { name: t('technologies.aiModels.2.name'), description: t('technologies.aiModels.2.description') },
     { name: t('technologies.aiModels.3.name'), description: t('technologies.aiModels.3.description') },
-  ];
+  ].filter((model) => model.name.trim().length > 0);
 
   return (
     <section id="technologies" className="section-padding">

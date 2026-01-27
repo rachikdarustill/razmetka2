@@ -12,32 +12,12 @@ export default function FAQ() {
   const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs: FAQItem[] = [
-    {
-      question: t('faq.items.0.question'),
-      answer: t('faq.items.0.answer'),
-    },
-    {
-      question: t('faq.items.1.question'),
-      answer: t('faq.items.1.answer'),
-    },
-    {
-      question: t('faq.items.2.question'),
-      answer: t('faq.items.2.answer'),
-    },
-    {
-      question: t('faq.items.3.question'),
-      answer: t('faq.items.3.answer'),
-    },
-    {
-      question: t('faq.items.4.question'),
-      answer: t('faq.items.4.answer'),
-    },
-    {
-      question: t('faq.items.5.question'),
-      answer: t('faq.items.5.answer'),
-    },
-  ];
+  const faqs: FAQItem[] = [0, 1, 2, 3, 4, 5]
+    .map((i) => ({
+      question: t(`faq.items.${i}.question`),
+      answer: t(`faq.items.${i}.answer`),
+    }))
+    .filter((item) => item.question.trim().length > 0 && item.answer.trim().length > 0);
 
   return (
     <section id="faq" className="section-padding">

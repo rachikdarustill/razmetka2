@@ -1,20 +1,54 @@
 {
   "hero": {
     "badge": "For EdTech / L&D / HR-tech",
-    "title": "Transform educational content into data for personalization",
-    "description": "We label educational content by competencies — ready for use in recommendation and analytics systems.",
+    "title": "We label learning content — for recommendations and analytics",
+    "description": "Ready for personalization, search, and skill coverage analytics.",
     "primaryCTA": "Request demo",
-    "secondaryCTA": "Sample labeling",
+    "secondaryCTA": "View sample labeling",
     "primaryCTAAria": "Request demo and API access",
-    "secondaryCTAAria": "Get sample labeling"
+    "secondaryCTAAria": "View sample labeling"
+  },
+  "whyWeDoIt": {
+    "title": "Why we do this",
+    "subtitle": "",
+    "items": [
+      {
+        "title": "Personalization & recommendations",
+        "intro": "Competencies turn content into a data layer for recommendations:",
+        "bullets": [
+          "pick the next learning step more accurately;",
+          "enable cold-start without manual tags;",
+          "build skill-based trajectories (not just topics)."
+        ],
+        "note": ""
+      },
+      {
+        "title": "Catalog & skill coverage analytics",
+        "intro": "See what your catalog actually contains:",
+        "bullets": [
+          "which competencies are covered and which are missing;",
+          "where duplication and gaps exist;",
+          "how coverage changes after updates."
+        ]
+      },
+      {
+        "title": "Diagnostics & progress assessment",
+        "intro": "The “content ↔ competencies” link simplifies skill assessment:",
+        "bullets": [
+          "tie outcomes to skills;",
+          "recommend actions for skill gaps;",
+          "track progress by competencies over time."
+        ]
+      }
+    ]
   },
   "valueProposition": {
     "title": "What you get",
     "items": [
-      "Labeling of each content item by developed competencies",
-      "Clear integration flow (input → labeling → output)",
-      "Scalability for large catalogs",
-      "Unified \"competency semantics\" for recommendations and analytics"
+      "A “content → competencies (+ confidence)” dataset in an agreed format",
+      "Versioning: stable taxonomy and change history",
+      "Incremental updates for new/changed items",
+      "API integration or batch delivery"
     ],
     "process": {
       "receive": {
@@ -33,22 +67,22 @@
   },
   "howItWorks": {
     "title": "How it works",
-    "subtitle": "Simple and transparent integration process in three steps",
+    "subtitle": "Integration in three steps",
     "steps": {
       "receive": {
         "title": "Receive",
         "subtitle": "We receive data",
-        "description": "We agree on the structure, receive the dataset via API, S3, files, or export — choose the channel that suits you."
+        "description": "We align the schema and receive the catalog (API / S3 / files)."
       },
       "label": {
         "title": "Label",
         "subtitle": "We label content",
-        "description": "We label content units by competencies that the content potentially develops when viewed/read/attended."
+        "description": "We extract competencies and confidence, with quality control."
       },
       "return": {
         "title": "Return",
         "subtitle": "We deliver results",
-        "description": "We deliver the labeled dataset to the partner via API or agreed channel — ready to use."
+        "description": "We deliver results via API or export — ready to integrate."
       }
     }
   },
@@ -57,28 +91,28 @@
     "subtitle": "Concrete results for developing your product",
     "items": [
       {
-        "title": "Ready labeled dataset",
-        "description": "The \"content → competencies\" dataset is ready to use in your systems"
+        "title": "Higher recommendation relevance",
+        "description": "Recommendations improve with a skill-based data layer"
       },
       {
-        "title": "Foundation for recommendation systems",
-        "description": "Personalization and smart recommendations based on competencies"
+        "title": "Faster personalization launch",
+        "description": "Less dependency on manual tagging and experts"
       },
       {
-        "title": "Increased relevance",
-        "description": "Content selections become more accurate and useful for users"
+        "title": "Skill-based search & navigation",
+        "description": "Skill discovery on top of your existing catalog"
       },
       {
-        "title": "Catalog analytics",
-        "description": "Understand which competencies your content covers"
+        "title": "Skill coverage analytics",
+        "description": "See gaps, duplicates, and catalog structure"
       },
       {
-        "title": "Incremental labeling",
-        "description": "Support for updates and adding new content items"
+        "title": "Operational update loop",
+        "description": "Support for new and changed content items"
       },
       {
-        "title": "Unified semantics",
-        "description": "Common language of competencies for all products and services"
+        "title": "Unified skill semantics",
+        "description": "Consistent language for product, analytics, and ML"
       }
     ]
   },
@@ -121,24 +155,24 @@
   },
   "security": {
     "title": "Security and SLA",
-    "subtitle": "Reliable data protection and transparent service terms",
+    "subtitle": "Data security and service terms",
     "securityTitle": "Data security",
     "features": [
       {
-        "title": "Data protection",
-        "description": "Partner data is used only for labeling and is not shared with third parties"
+        "title": "Data usage",
+        "description": "Data is used only for labeling and is not used for model training without written consent"
       },
       {
-        "title": "Secure protocols",
-        "description": "All transfer channels use modern encryption protocols"
+        "title": "NDA / DPA",
+        "description": "We can sign NDA and data processing agreements"
+      },
+      {
+        "title": "Secure transport",
+        "description": "Encrypted transfer channels (TLS)"
       },
       {
         "title": "Access control",
-        "description": "Data access is via keys and tokens with permission control"
-      },
-      {
-        "title": "Logs and audit",
-        "description": "Full operation logging and access audit (by agreement)"
+        "description": "Keys/tokens with permissions; logging — by agreement"
       }
     ],
     "slaTitle": "Service level (SLA)",
@@ -167,31 +201,31 @@
   },
   "faq": {
     "title": "Frequently asked questions",
-    "subtitle": "Answers to popular questions about the labeling service",
+    "subtitle": "Short and to the point",
     "items": [
       {
         "question": "How do \"competencies\" differ from tags/topics?",
-        "answer": "Competencies describe professionally important skills that content develops. Unlike tags (keywords) or topics (knowledge areas), competencies focus on what a person will be able to do after studying the content. For example, instead of the tag \"Python\", a competency might be \"Python Programming\" or \"Web Application Development\"."
+        "answer": "Tags describe “what it’s about”; competencies describe “what you can do” after learning. This works better for recommendations, trajectories, and skill analytics."
       },
       {
         "question": "Can different types of content be labeled (videos/articles/events)?",
-        "answer": "Yes, our classifier works with various types of educational content: video courses, articles, webinars, offline events, podcasts, and other formats. The main thing is the presence of descriptive information about the content (title, description, program)."
-      },
-      {
-        "question": "How often can labeling be updated and new items added?",
-        "answer": "You can send updates at any convenient time. We support both full catalog reload and incremental updates (adding new items or changing existing ones). Frequency depends on the selected plan and data volume."
-      },
-      {
-        "question": "What transfer formats are supported besides API?",
-        "answer": "In addition to REST API, we support file uploads in CSV and JSON formats, integration with cloud storage (S3, Google Cloud Storage, Azure Blob), as well as secure file transfer by individual agreement. The choice depends on your security requirements and data volumes."
+        "answer": "Yes: videos, articles, webinars, offline events, and more. The key requirement is descriptive metadata (title, description, outline)."
       },
       {
         "question": "Can I get a sample labeling before the pilot?",
-        "answer": "Yes, we provide labeling samples for quality assessment. You can send a small sample of your content (5-10 items), and we will perform a trial labeling free of charge. This will allow you to evaluate the result before starting the pilot project."
+        "answer": "Yes. Send 5–10 items — we’ll prepare a sample so you can evaluate quality before a pilot."
       },
       {
-        "question": "How is privacy/security handled?",
-        "answer": "All data is transmitted over secure channels (TLS/SSL), access is via API keys with permission restrictions. Your data is used exclusively for labeling and is not shared with third parties. We are ready to sign NDA and data processing agreements. Upon request, we provide detailed security documentation."
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
       }
     ]
   },
@@ -237,6 +271,7 @@
     "description": "We label educational content by competencies to create smart recommendations.",
     "navigation": {
       "title": "Navigation",
+      "whyWeDoIt": "Why",
       "howItWorks": "How it works",
       "outcomes": "Benefits",
       "integrations": "Integrations",
@@ -250,51 +285,51 @@
   },
   "technologies": {
     "title": "Technologies and AI Models",
-    "subtitle": "Modern tech stack and advanced AI models for accurate content labeling",
+    "subtitle": "A concise view of the stack and approaches behind quality and scale",
     "techTitle": "Technologies",
     "aiTitle": "AI Models",
     "tech": [
       {
         "name": "Python",
-        "description": "Core programming language for data processing and ML pipelines"
+        "description": "Data processing and ML pipelines"
       },
       {
         "name": "FastAPI",
-        "description": "High-performance API framework for data exchange"
+        "description": "Integration and data exchange API"
       },
       {
-        "name": "PostgreSQL",
-        "description": "Reliable database for storing labeled datasets"
+        "name": "MLOps",
+        "description": "Versioning, reproducibility, and quality control"
       },
       {
-        "name": "Docker & Kubernetes",
-        "description": "Containerization and orchestration for scalable infrastructure"
+        "name": "",
+        "description": ""
       },
       {
-        "name": "AWS / Cloud",
-        "description": "Cloud infrastructure for processing large datasets"
+        "name": "",
+        "description": ""
       },
       {
-        "name": "MLflow",
-        "description": "MLOps platform for model versioning and deployment"
+        "name": "",
+        "description": ""
       }
     ],
     "aiModels": [
       {
-        "name": "GPT-4 / GPT-4 Turbo",
-        "description": "Advanced language models for content understanding and classification"
+        "name": "LLM classification",
+        "description": "Semantic extraction of competencies from content metadata"
       },
       {
-        "name": "Claude (Anthropic)",
-        "description": "High-quality AI for semantic analysis and competency extraction"
+        "name": "Embeddings",
+        "description": "Similarity and grouping to improve consistency"
       },
       {
-        "name": "Custom Fine-tuned Models",
-        "description": "Specialized models trained on educational content datasets"
+        "name": "",
+        "description": ""
       },
       {
-        "name": "Embedding Models",
-        "description": "Vector embeddings for semantic similarity and recommendations"
+        "name": "",
+        "description": ""
       }
     ]
   },
@@ -303,10 +338,10 @@
   },
   "metadata": {
     "title": "Leoni — Educational Content Labeling by Competencies",
-    "description": "We receive your dataset via API or alternative channel, label each content unit with an internal classifier of professionally important competencies and return the result — also via API.",
+    "description": "We receive your content catalog, label it by competencies, and return the result for recommendations, search, and analytics.",
     "keywords": "EdTech, competencies, content labeling, API, recommendation systems, L&D, HR-tech",
     "ogTitle": "Leoni — Educational Content Labeling by Competencies",
-    "ogDescription": "We label your educational content by developed competencies — ready for recommendations",
+    "ogDescription": "We label content by competencies — ready for recommendations and analytics",
     "ogImageAlt": "Leoni — Content Labeling by Competencies"
   }
 }
